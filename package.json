@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "coronavirus ",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.9.28"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neumont-Ecommerce/Coronavirus.git"
+  },
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "James Taylor Katherine Lee Vance Weston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neumont-Ecommerce/Coronavirus/issues"
+  },
+  "homepage": "https://github.com/Neumont-Ecommerce/Coronavirus#readme"
+}
