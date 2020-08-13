@@ -36,6 +36,15 @@ const default_admin03 = new user({
     password: 'CoolMan',
     admin: true
 });
+const default_admin04 = new user({
+    email: 'ctayor@student.neumont.edu',
+    first_name: 'Coy',
+    middle_name: 'Sr.',
+    last_name: 'James',
+    member: true,
+    password: 'CoolSuperHero',
+    admin: true
+});
 
 const default_product = new product({
     sanitizer: 'Germ-X',
@@ -50,7 +59,7 @@ module.exports = {
         console.log('Create');
         
         //promises the executing function returns a special object to you (the promise) and then you tell the promise what to do
-        let save_promise = default_admin03.save();
+        let save_promise = default_admin04.save();
         // True or False if we are getting a promise back
         console.log('Is Promise' + (save_promise instanceof Promise));
         save_promise.then ((save_user) => {

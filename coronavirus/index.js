@@ -1,7 +1,5 @@
 const crud = require('./operations/crud');
 const mongoose = require('mongoose');
-//const query = require('./operations/query');
-const product = require('./model/product');
 
 let connection_string = "mongodb://127.0.0.1:27017/Coronavirus?retryWrites=true&w=majority";
 //Server discovery and monitoring engine deprecated
@@ -21,8 +19,8 @@ mongoose.connect(connection_string).then(
     () => {
         console.log('Connected to MongoDb');
 
-        //crud.create_operation();
-        crud.update_product_operation();
+        crud.create_operation();
+        //crud.update_product_operation();
         //crud.updated_user_operation();
         //crud.delete_operation();
         //query.find_operation();
