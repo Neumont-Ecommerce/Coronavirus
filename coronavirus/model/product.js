@@ -3,9 +3,8 @@ const mongoose = require('mongoose');
 const product_schema = new mongoose.Schema({
     sanitizer: {
         type: String,
-        required: true,
         index: true,
-        unique: true
+        required: true
     },
     toiletpaper: {
         type: String,
@@ -21,7 +20,10 @@ const product_schema = new mongoose.Schema({
     },
     themometer: {
         type: String,
-        required: true
+        required: true,
+        user_id: {
+            unique: true
+        }
     },
 });
 
